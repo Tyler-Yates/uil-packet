@@ -14,7 +14,7 @@ public class TestAllProblems {
     private static final String TEST_RESOURCE_DIR = "src/test/resources/data/";
 
     @ParameterizedTest
-    @ValueSource(strings = {"adv00"})
+    @ValueSource(strings = {"adv00", "adv01"})
     void testAdvFiles(String advFileName) throws IOException {
         // Read the input and expected output files dynamically
         String inputFilePath = TEST_RESOURCE_DIR + advFileName + ".dat";
@@ -31,7 +31,7 @@ public class TestAllProblems {
     }
 
     // Helper method to execute the main method dynamically
-    private String executeMainMethod(String className, String input) throws IOException {
+    private String executeMainMethod(String className, String input) {
         // Get the class using reflection
         try {
             Class<?> clazz = Class.forName("com.uil." + className);

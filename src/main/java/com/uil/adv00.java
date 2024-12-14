@@ -4,17 +4,18 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-class Result {
-    int males;
-    int females;
-
-    public Result(int males, int females) {
-        this.males = males;
-        this.females = females;
-    }
-}
 
 public class adv00 {
+    private static class Result {
+        int males;
+        int females;
+
+        public Result(int males, int females) {
+            this.males = males;
+            this.females = females;
+        }
+    }
+
     private static Result getGenerationNumber(final String gender, final int generation) {
         List<String> bees = new ArrayList<>();
         bees.add(gender);
@@ -59,7 +60,7 @@ public class adv00 {
     public static void main(String[] args) {
         final Scanner scanner = new Scanner(System.in);
         final int numLines = Integer.parseInt(scanner.nextLine());
-        for (int i = 0; i <numLines; i++) {
+        for (int i = 0; i < numLines; i++) {
             processLine(scanner.nextLine());
         }
     }
