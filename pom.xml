@@ -41,6 +41,13 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M5</version>
+                <configuration>
+                    <printSummary>true</printSummary>
+                    <useTestNGSuite>false</useTestNGSuite>
+                    <reportFormat>brief</reportFormat>
+                    <testFailureIgnore>false</testFailureIgnore>
+                    <consoleOutput>true</consoleOutput>
+                </configuration>
             </plugin>
         </plugins>
     </build>
