@@ -33,7 +33,7 @@ public class TestAllProblems {
 
     // Helper method to get class names dynamically from the package
     static List<String> getClassNames() throws IOException {
-        return DynamicTestClassLoader.getClassNamesFromDirectory();
+        return DynamicClassLoader.getClassNamesFromDirectory();
     }
 
     // Helper method to execute the main method dynamically

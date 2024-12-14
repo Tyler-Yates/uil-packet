@@ -10,7 +10,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.stream.Stream;
 
-public class DynamicTestClassLoader {
+public class DynamicClassLoader {
     public static List<String> getClassNamesFromDirectory() throws IOException {
         List<String> classNames = new ArrayList<>();
         final Path projectRoot = findProjectRoot();
